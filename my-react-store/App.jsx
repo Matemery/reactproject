@@ -1,6 +1,7 @@
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import './App.css'
+import Navbar from './src/assets/components/Navbar';
+import Footer from './src/assets/components/Footer';
+import './App.css';
+import QuantityPicker from './qtypicker';
 
 function App() {
   
@@ -13,6 +14,10 @@ function App() {
         <p>Discover amazing products at incredible preices</p>
       </main>
       <Footer/>
+      < QuantityPicker />
+      < QuantityPicker />
+      < QuantityPicker />
+      < QuantityPicker />
    </div>
   )
 }
