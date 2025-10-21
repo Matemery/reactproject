@@ -21,6 +21,9 @@ function Navbar() {
                 <li className="nav-item">
                     <Link to={"/about"} className="nav-link">About</Link>
                 </li>
+                <li className="nav-item">
+                    <Link to={"/contact"} className="nav-link">Contact Us!</Link>
+                </li>
             </ul>
         </div>
     </div>
