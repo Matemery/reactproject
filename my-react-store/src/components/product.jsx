@@ -21,7 +21,7 @@ function Product(props) {
       
       <h5>{props.data.title}</h5>
       <div className="prices">
-        <label>${props.data.price.toFixed(2)}</label>
+        <label>${props.data.price}</label>
         <label>${getTotal()}</label>
       </div>
       <QuantityPicker onChange={handleQtyChange} />

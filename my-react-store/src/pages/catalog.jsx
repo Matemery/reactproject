@@ -12,7 +12,7 @@ function Catalog() {
   useEffect(() => {
    
     let service = new DataService();
-    let data = service.getProducts();
+    let data = service.getCatalog();
     setProducts(data);
     console.log(data);
     loadCategories();  
@@ -21,7 +21,7 @@ function Catalog() {
 
 function loadCategories(){
   let service = new DataService();
-  let data = service.getProducts();
+  let data = service.getCatalog();
   setProductsFiltered(data);
   let cats=["fruit","berrys"];
   setCategory(cats);

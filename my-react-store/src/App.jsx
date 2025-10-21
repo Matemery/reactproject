@@ -1,3 +1,6 @@
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/About";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import QuantityPicker from './components/qtypicker'
@@ -9,16 +12,23 @@ import './App.css';
 function App() {
   
   return (
-   <div className="App">
-      <Navbar />
-      <main className="main-content">
-        <h1>Welcome to my online store!</h1>
-        <p>Discover amazing  products at incredible prices.</p>
-      </main>
-
-      <Catalog/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+        <div className="">
+            <Navbar />
+            
+            <Routes>
+              <Route path="/" element={<Home/>}></Route>
+              <Route path="/catalog" element={<Catalog/>}></Route> 
+              <Route path="/about" element={<About/>}></Route>
+              <Route path="*" element={<Navigate to="/" repalce/>}></Route>
+            
+            
+            </Routes>
+            
+            <Footer/>
+          </div>
+    </BrowserRouter>
+   
   )
 }
 
