@@ -1,21 +1,8 @@
-.navbar{
-    background-color: black;
-    color: white;
-    padding: 1rem;
+.navbar {
+  margin-bottom: 20px;
 }
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-}
-.navbar-nav{
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-.nav-link{
-    color: white;
-    text-decoration: none;
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
